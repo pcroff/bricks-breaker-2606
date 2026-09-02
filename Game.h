@@ -1,14 +1,21 @@
 #pragma once
 #include "Box.h"
 #include "Ball.h"
+#include "vector"
 
 class Game
 {
+	enum class Gamestate { PLAY = 0, PAUSE, WIN, LOSE };
+
+	Gamestate state;
+	Box screen;
 	Ball ball;
 	Box paddle;
 
+
 	// TODO #1 - Instead of storing 1 brick, store a vector of bricks (by value)
-	Box brick;
+	//Box brick;
+	std::vector<Box> bricks;
 
 public:
 	Game();
