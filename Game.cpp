@@ -22,7 +22,7 @@ void Game::Reset()
 	bricks.clear();
 
 	// TODO #2 - Add this brick and 4 more bricks to the vector
-	for (int i = 0; i < 1; i++)
+	for (int i = 0; i < 5; i++)
 	{
 		Box brick;
 		brick.width = 10;
